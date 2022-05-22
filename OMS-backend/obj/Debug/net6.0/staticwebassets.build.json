@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ai+FElFOSSrb5ll8mDqH8tEKum+thribjU1Y8lzkbVw=",
+  "Source": "OMS-backend",
+  "BasePath": "_content/OMS-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

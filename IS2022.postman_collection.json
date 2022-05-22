@@ -1,0 +1,1410 @@
+{
+	"info": {
+		"_postman_id": "2ceeab44-6d94-46f3-a959-2ee34bfdcfdb",
+		"name": "IS2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21099462"
+	},
+	"item": [
+		{
+			"name": "uloga_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"naziv\":\"nova_uloga\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/uloga/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"uloga",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uloga_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/uloga/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"uloga",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uloga_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/uloga/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"uloga",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uloga_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1, \"naziv\":\"azurirana\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/uloga/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"uloga",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uloga_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/uloga/delete?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"uloga",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pozicija_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"naziv\":\"nova_pozicija\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/pozicija/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"pozicija",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pozicija_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/pozicija/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"pozicija",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pozicija_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/pozicija/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"pozicija",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pozicija_edit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1, \"naziv\":\"azuriralo se\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/pozicija/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"pozicija",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pozicija_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/pozicija/delete?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"pozicija",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tim_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"naziv\":\"tim_broj2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/tim/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"tim",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tim_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/tim/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"tim",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tim_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/tim/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"tim",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tim_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2, \"naziv\":\"update drugog tima\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/tim/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"tim",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tim_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/tim/delete?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"tim",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusopreme_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"naziv\":\"status novi\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/statusopreme/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"statusopreme",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusopreme_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/statusopreme/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"statusopreme",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusopreme_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/statusopreme/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"statusopreme",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusopreme_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2, \"naziv\":\"promijenio se naziv\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/statusopreme/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"statusopreme",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusopreme_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/statusopreme/delete?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"statusopreme",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategorijaopreme_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"naziv\":\"dodana nova kategorija opreme\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/kategorijaopreme/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"kategorijaopreme",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategorijaopreme_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/kategorijaopreme/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"kategorijaopreme",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategorijaopreme_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2, \"naziv\":\"azurirala se kategorija\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/kategorijaopreme/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"kategorijaopreme",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategorijaopreme_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/kategorijaopreme/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"kategorijaopreme",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategorijaopreme_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/kategorijaopreme/delete?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"kategorijaopreme",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "osoba_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ime\":\"Ivan\", \"prezime\":\"ima ga\", \"lozinka\" :\" jako lagana sifra\", \"email\" : \"ima.i_mail@gmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/osoba/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"osoba",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "osoba_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/osoba/get?id=3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"osoba",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "osoba_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/osoba/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"osoba",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "osoba_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":4, \"lozinka\":\"fgeasgfewge\", \"ime\":\"promijenio ga je\", \"prezime\": \"i to mu je novo\", \"email\":\"mail.mail@fr.hr\", \"oib\":\"1564568654\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/osoba/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"osoba",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "osoba_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/osoba/delete?id=5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"osoba",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oprema_getall",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check that it returns an array\", function () {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData).to.be.an(\"array\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/oprema/getall",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"oprema",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oprema_get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/oprema/get?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"oprema",
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oprema_add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"naziv\":\"novi naziv\", \"cijena\":5.20, \"serijskibroj\":\"15186FEW4\",\"FkTrenutnivlasnikid\":3,\"FkStatusid\":1, \"FkKategorijaid\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/oprema/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"oprema",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oprema_delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7116/oprema/delete?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"oprema",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oprema_update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Request is successful with a status code of 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":3,\"naziv\":\"novi vlasnik firme->novi naziv\", \"cijena\":5.20, \"serijskibroj\":\"15186FEW4\",\"FkTrenutnivlasnikid\":3,\"FkStatusid\":1, \"FkKategorijaid\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7116/oprema/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7116",
+					"path": [
+						"oprema",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
