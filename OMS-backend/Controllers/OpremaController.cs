@@ -25,10 +25,20 @@ namespace OMS_backend.Controllers
         {
             return Ok(_oprema.GetOprema(id));
         }
+        [HttpGet("getbyuserid")]
+        public IActionResult Getbyuserid(int osobaid)
+        {
+            return Ok(_oprema.GetOpremaByUser(osobaid));
+        }
         [HttpPost("add")]
         public IActionResult Add(Oprema oprema)
         {
-            return Ok(_oprema.AddOprema(oprema));
+            var res = _oprema.AddOprema(oprema);
+            if (res == "ok")
+            {
+                return Ok(res);
+            }
+            return StatusCode(409, res);
         }
         [HttpDelete("delete")]
         public IActionResult Delete(int id)

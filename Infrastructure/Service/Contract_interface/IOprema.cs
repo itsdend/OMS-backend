@@ -11,6 +11,7 @@ namespace Infrastructure.Service.Contract_interface
     {
         List<Oprema> GetSveOpreme();
         Oprema GetOprema(int id);
+        List<Oprema> GetOpremaByUser(int osobaid);
         string AddOprema(Oprema oprema);
         string UpdateOprema(Oprema oprema);
         string DeleteOprema(int id);

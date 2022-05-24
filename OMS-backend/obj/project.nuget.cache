@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bqUn54DjtM0R6K/KSPK4HHRsUBcSHAEvIwbFNlVUnDHzyUSjB9DQ7mjTPrcc3kuPYxT0k/PjEBD29sSU6Pj0Rw==",
+  "dgSpecHash": "FTa1AkvGz02kxGR8oXgB4larriN7d0loelp0K1VaLuSDQmOTUc74bZcSv0jIgl0tOgy7ujxjK9DtWJZAkh0xBA==",
   "success": true,
-  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\OMS-backend\\OMS-backend.csproj",
+  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\OMS-backend\\OMS-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marko\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

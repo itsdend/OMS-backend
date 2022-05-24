@@ -18,6 +18,11 @@ namespace Infrastructure.Service.Implementation
         }
         public string AddOprema(Oprema oprema)
         {
+            var postojeci = _dbContext.oprema.Where(x => x.Serijskibroj == oprema.Serijskibroj).ToList();
+            if (postojeci.Count() > 0)
+            {
+                return "Već postoji oprema s navedenim serijskim brojem";
+            }
             try
             {
                 _dbContext.oprema.Add(oprema);
@@ -48,6 +53,12 @@ namespace Infrastructure.Service.Implementation
         public Oprema GetOprema(int id)
         {
             return _dbContext.oprema.Find(id);
+        }
+
+        public List<Oprema> GetOpremaByUser(int osobaid)
+        {
+
+            return _dbContext.oprema.Where(x => x.FkTrenutnivlasnikid == osobaid).ToList();
         }
 
         public List<Oprema> GetSveOpreme()

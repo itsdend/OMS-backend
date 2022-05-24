@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hgo5WaGlbvMgXn4Gki9faJzKp9pKjiNmVZYOb8pCi7w5GrJ9HT2hnpbJwv2SSI9vWJci0Zb3wsyCTySMBxMZ8Q==",
+  "dgSpecHash": "dHE2nX2crpPXTkxbBZqxJUEgpmTlArB/YR9lXJ+PB5Yr1SLs//CEOSYz/3Snra5e5KUX+qN56FxprBe0TPbpoA==",
   "success": true,
-  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainServices\\DomainServices.csproj",
+  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainServices\\DomainServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marko\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

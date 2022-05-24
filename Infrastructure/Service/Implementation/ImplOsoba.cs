@@ -18,6 +18,11 @@ namespace Infrastructure.Service.Implementation
         }
         public string AddOsoba(Osoba osoba)
         {
+            var postojeci = _dbContext.osoba.Where(x => x.Oib == osoba.Oib).ToList();
+            if(postojeci.Count() > 0)
+            {
+                return "Već postoji osoba s ovim OIB-om";
+            }
             try
             {
                 using (var sha = new System.Security.Cryptography.SHA256Managed())

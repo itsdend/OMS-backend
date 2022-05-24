@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lpUUFTUTBxkp1Jn0CpNaUEYOOC1DyvksvYa/OTRXE+7p3B/pbrVZ3oAgOMJziPz2bvxuG1HUyNhaCm+lOXXTpQ==",
+  "dgSpecHash": "BZIud38PnZZLosDGzCQQqr+t6dJym8SlMlcWe3cJAZjNzn9B2ZeKciPiVnVbsHGxl5txSmUZdb1AKw8o+unjMg==",
   "success": true,
-  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marko\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "C:\\Users\\Marko\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",

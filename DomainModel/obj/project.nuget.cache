@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KlnGsqli+JKuiCARkNmHKObHSz76Ef7Cx7ACy5N55bgp+bgGdcJHyrvI8X3jzmcZeT6+fO/zNXpVteO/phLZvg==",
+  "dgSpecHash": "yx3UIpLDMk5PXUFYMO2mmmpZmL0Ft8Z4Wn3Z1g+Bzj/Zm5FGLokGKtEs7pUFllPnRMv34Nh8w6dv637XLk4rZw==",
   "success": true,
-  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainModel\\DomainModel.csproj",
+  "projectFilePath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainModel\\DomainModel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

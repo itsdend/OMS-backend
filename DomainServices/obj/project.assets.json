@@ -761,11 +761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainServices\\DomainServices.csproj",
+      "projectUniqueName": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainServices\\DomainServices.csproj",
       "projectName": "DomainServices",
-      "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainServices\\DomainServices.csproj",
+      "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainServices\\DomainServices.csproj",
       "packagesPath": "C:\\Users\\Marko\\.nuget\\packages\\",
-      "outputPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainServices\\obj\\",
+      "outputPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainServices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marko\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -782,8 +782,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainModel\\DomainModel.csproj": {
-              "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\DomainModel\\DomainModel.csproj"
+            "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainModel\\DomainModel.csproj": {
+              "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\DomainModel\\DomainModel.csproj"
             }
           }
         }

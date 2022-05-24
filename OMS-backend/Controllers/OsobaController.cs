@@ -28,7 +28,12 @@ namespace OMS_backend.Controllers
         [HttpPost("add")]
         public IActionResult Add(Osoba osoba)
         {
-            return Ok(_osoba.AddOsoba(osoba));
+            var res = _osoba.AddOsoba(osoba);
+            if(res == "ok")
+            {
+                return Ok(res);
+            }
+            return StatusCode(409,res);
         }
         [HttpDelete("delete")]
         public IActionResult Delete(int id)

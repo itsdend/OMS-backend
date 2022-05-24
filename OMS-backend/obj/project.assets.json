@@ -763,11 +763,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\OMS-backend\\OMS-backend.csproj",
+      "projectUniqueName": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\OMS-backend\\OMS-backend.csproj",
       "projectName": "OMS-backend",
-      "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\OMS-backend\\OMS-backend.csproj",
+      "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\OMS-backend\\OMS-backend.csproj",
       "packagesPath": "C:\\Users\\Marko\\.nuget\\packages\\",
-      "outputPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\OMS-backend\\obj\\",
+      "outputPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\OMS-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marko\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -784,8 +784,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\moc\\InformacijskiSustavi-Docs\\backend\\Infrastructure\\Infrastructure.csproj"
+            "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "F:\\00FER-materijali\\2.DIPLOMSKI\\infosus-mojgit\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
